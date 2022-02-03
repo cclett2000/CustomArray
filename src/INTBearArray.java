@@ -1,6 +1,5 @@
 // int array thingy
 
-
 import java.util.Arrays;
 import java.util.Random;
 
@@ -32,10 +31,10 @@ public class INTBearArray {
 
     // test/demonstrate array functionality
     public void demo(){
-        Random rand = new Random();                                                // init for RNG
-        for (int i = 0; i < demo_size; i++) append(rand.nextInt(1000));     // add RN to array
+        Random rand = new Random();                                                 // init for RNG
+        for (int i = 0; i < demo_size; i++) append(rand.nextInt(1000));
 
-        System.out.println(Arrays.toString(this.array));
+        System.out.println(Arrays.toString(this.array));                            // print demo
     }
 
     // array stats
