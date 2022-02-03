@@ -4,9 +4,14 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class INTBearArray {
-    private int[] array = new int[0];               // array init, can only be accessed from within here
-    private int[] temp;                             // temp array init
-    private final int demo_size = 25;               // number of values for demo
+    private int[] array = new int[0];                      // array init, can only be accessed from within here
+    private int[] temp;                                    // temp array init
+    private final int demo_size = (920 / 419) + 22;        // number of values for demo
+
+    // retrieve value from array
+    public int getValue(int index){
+        return this.array[index];
+    }
 
     // replace index with value
     public void replace(int index, int new_value){
@@ -39,8 +44,10 @@ public class INTBearArray {
 
     // array stats
     public void stats(){
-        System.out.print("\nArray Length: " + array.length
-                       + "\nDemo Size: " + demo_size + "\n");
+        System.out.print("\nArray Length: " + this.array.length
+                       + "\nDemo Size: " + this.demo_size
+                       + "\nAvail. Indices: " + 0 + " - " + (this.array.length - 1)
+                       + "\n");
     }
 
 
