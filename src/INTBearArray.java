@@ -13,6 +13,15 @@ public class INTBearArray {
         return this.array[index];
     }
 
+    // calculate the sum of the list
+    public int getSum(){
+        int sum = 0;
+        for (int i = 0; i < array.length; i++){
+            sum += array[i];
+        }
+        return sum;
+    }
+
     // replace index with value
     public void replace(int index, int new_value){
         this.array[index] = new_value;
