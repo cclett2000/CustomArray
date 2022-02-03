@@ -26,7 +26,7 @@ public class INTBearArray {
         for (int i = 0; i < array.length; i++) temp[i] = array[i];      // manual array copy
 
         this.temp[temp.length-1] = value;                               // appends value to end of array
-        this.array = temp;                                              // modifies actual array
+        this.array = this.temp;                                              // modifies actual array
     }
 
     // prints array data
