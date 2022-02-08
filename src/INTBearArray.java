@@ -23,7 +23,7 @@ public class INTBearArray {
 
     // replace index with value
     public void replace(int index, int new_value){
-        this.array[index] = new_value;
+        array[index] = new_value;
     }
 
     // appends to array, increasing size by 1
