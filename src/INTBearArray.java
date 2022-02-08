@@ -29,13 +29,13 @@ public class INTBearArray {
     // appends to array, increasing size by 1
     public void append(int value){
         // temp array init
-        int[] temp = new int[array.length + 1];                         // temp array; stores array data + empty slot for append
+        int[] temp = new int[array.length + 1];                     // temp array; stores array data + empty slot for append
 
-        //System.arraycopy(array, 0, temp, 0, array.length);            // this works too, but I wanted to get it working manually
-        for (int i = 0; i < array.length; i++) temp[i] = array[i];      // manual array copy
+        //System.arraycopy(array, 0, temp, 0, array.length);        // this works too, but I wanted to get it working manually
+        for (int i = 0; i < array.length; i++) temp[i] = array[i];  // manual array copy
 
-        temp[temp.length-1] = value;                                    // appends value to end of array
-        array = temp;                                                   // modifies actual array
+        temp[temp.length-1] = value;                                // appends value to end of array
+        array = temp;                                               // modifies actual array
     }
 
     // prints array data
@@ -45,10 +45,10 @@ public class INTBearArray {
 
     // test/demonstrate array functionality
     public void demo(){
-        Random rand = new Random();                                                 // init for RNG
+        Random rand = new Random();     // init for RNG
         for (int i = 0; i < demo_size; i++) append(rand.nextInt(1000));
 
-        System.out.println(Arrays.toString(array));                                 // print demo
+        System.out.println(Arrays.toString(array));     // print demo
     }
 
     // array stats
