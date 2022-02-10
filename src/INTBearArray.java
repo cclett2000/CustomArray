@@ -1,7 +1,10 @@
 // int array thingy
 
+import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
+import java.io.File;
 
 public class INTBearArray {
     private int[] array = new int[0];                      // array init, can only be accessed from within here
@@ -57,6 +60,16 @@ public class INTBearArray {
                        + "\nDemo Size: " + demo_size
                        + "\nAvail. Indices: " + 0 + " - " + (array.length - 1)
                        + "\n");
+    }
+
+    public void EE() throws FileNotFoundException {
+        File EE = new File("sumthin01.txt");
+        Scanner f_reader = new Scanner(EE);
+
+        while(f_reader.hasNextLine()){
+            System.out.println(f_reader.nextLine());
+        }
+
     }
 
 
